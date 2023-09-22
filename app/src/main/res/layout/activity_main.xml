@@ -111,27 +111,15 @@
                 app:layout_constraintStart_toStartOf="@id/tip_options"
                 app:layout_constraintTop_toBottomOf="@id/tip_options" />
 
-            <Button
-                android:id="@+id/calculate_button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/calculate"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/round_up_switch" />
-
             <TextView
                 android:id="@+id/tip_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:text="@string/tip_amount"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/calculate_button" />
+                app:layout_constraintTop_toBottomOf="@+id/round_up_switch" />
 
             <ImageView
                 android:id="@+id/imageView"
