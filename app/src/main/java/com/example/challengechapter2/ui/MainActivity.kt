@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bindView() {
-        binding.imageView.setImageResource(R.drawable.ic_android)
+        binding.imageView.setImageResource(R.drawable.synrgy_academy)
+        intercationButtonClickUI()
         interactionEditTextRealtimeUI()
         interactionSwitchRealtimeUI()
         interactionRadioGroupRealtimeUI()
@@ -37,6 +38,10 @@ class MainActivity : AppCompatActivity() {
                 binding.tipResult.text = "Tip Amount: $tipAmount"
             }
         }
+    }
+
+    private fun intercationButtonClickUI() {
+
     }
 
     private fun interactionEditTextRealtimeUI() {
