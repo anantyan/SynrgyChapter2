@@ -10,7 +10,7 @@ import kotlin.math.ceil
  *
  * @return [Double] hasil keluaran berupa double
  * */
-class Calculation : CalculationImpl {
+class CalculationImpl : Calculation {
     override fun calculateTip(
         costOfService: Double,
         tipPercentage: Double,
@@ -25,11 +25,5 @@ class Calculation : CalculationImpl {
             tipAmount = ceil(tipAmount)
         }
         return tipAmount
-    }
-}
-
-interface CalculationImpl {
-    fun calculateTip(costOfService: Double, tipPercentage: Double, roundUp: Boolean): Double {
-        return 0.0
     }
 }

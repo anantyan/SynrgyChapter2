@@ -1,4 +1,4 @@
-package com.example.challengechapter2.utils
+package com.example.challengechapter2.common
 
 import android.text.Editable
 import android.text.TextWatcher

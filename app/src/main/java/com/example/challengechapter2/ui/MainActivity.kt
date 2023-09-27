@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.challengechapter2.R
 import com.example.challengechapter2.databinding.ActivityMainBinding
-import com.example.challengechapter2.utils.costOfService
-import com.example.challengechapter2.utils.roundUp
-import com.example.challengechapter2.utils.tipPercentage
+import com.example.challengechapter2.common.costOfService
+import com.example.challengechapter2.common.roundUp
+import com.example.challengechapter2.common.tipPercentage
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -41,7 +41,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun intercationButtonClickUI() {
-
+        binding.btnCalculate.setOnClickListener {
+            val costOfService = binding.costOfService.text.toString().toDoubleOrNull() ?: 0.0
+            val roundUp = binding.roundUpSwitch.isChecked
+            val tipPercentage = when (binding.tipOptions.checkedRadioButtonId) {
+                binding.optionTwentyPercent.id -> 0.20
+                binding.optionEighteenPercent.id -> 0.18
+                binding.optionFifteenPercent.id -> 0.15
+                else -> 0.0
+            }
+            viewModel.calculateTip(costOfService, tipPercentage, roundUp)
+        }
     }
 
     private fun interactionEditTextRealtimeUI() {
