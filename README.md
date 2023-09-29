@@ -1,7 +1,7 @@
 # SynrgyChapter2
 Lorem ipsum dolor sit amet - Hasil challenge dari pembelajaran intensif chapter 2
 ### Preview Video:
-https://github.com/anantyan/SynrgyChapter2/assets/43742778/af827732-65b2-4bdf-8a8c-342f500d5f78
+https://github.com/anantyan/SynrgyChapter2/assets/43742778/e82cf32b-ba61-41ca-bd61-933dabc6849b
 ### Racikan Tambahan:
 - View Binding
 - View Model
